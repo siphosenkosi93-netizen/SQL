@@ -256,7 +256,14 @@ FROM world_layoffs.layoffs_staging2;
 SELECT DISTINCT country
 FROM world_layoffs.layoffs_staging2
 ORDER BY country;
+-- I tried this code and it works
+select * from layoffs_staging2
+where country like '%.%';
 
+update layoffs_staging2
+set country = 'United States'
+where country like 'United States.%';
+-- end of code
 UPDATE layoffs_staging2
 SET country = TRIM(TRAILING '.' FROM country);
 
