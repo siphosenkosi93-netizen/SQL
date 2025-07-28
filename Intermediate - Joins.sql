@@ -95,14 +95,14 @@ JOIN employee_salary emp2
 
 -- now we have on other table we can join - let's take a look at it
 SELECT * 
-FROM parks_and_recreation.parks_departments;
+FROM parks_and_recreation.park_departments;
 
 
 SELECT *
 FROM employee_demographics dem
 INNER JOIN employee_salary sal
 	ON dem.employee_id = sal.employee_id
-JOIN parks_departments dept
+JOIN park_departments dept
 	ON dept.department_id = sal.dept_id;
 
 -- now notice when we did that, since it's an inner join it got rid of andy because he wasn't a part of any department
@@ -112,7 +112,7 @@ SELECT *
 FROM employee_demographics dem
 INNER JOIN employee_salary sal
 	ON dem.employee_id = sal.employee_id
-LEFT JOIN parks_departments dept
+LEFT JOIN park_departments dept
 	ON dept.department_id = sal.dept_id;
 
 
