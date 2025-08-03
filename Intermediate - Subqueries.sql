@@ -16,7 +16,7 @@ WHERE employee_id IN
 				FROM employee_salary
                 WHERE dept_id = 1);
                 
-#So we are using that subquery in the where statement and if we just highlight the subwuery and run it it's basically a list we are selecting from in the outer query
+#So we are using that subquery in the where statement and if we just highlight the subquery and run it it's basically a list we are selecting from in the outer query
 
 SELECT *
 FROM employee_demographics
