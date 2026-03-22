@@ -20,7 +20,7 @@ FROM employee_demographics;
 SELECT first_name, last_name
 FROM employee_demographics;
 
-#Now the order doesn't normall matter when selecting your columns.
+#Now the order doesn't normally matter when selecting your columns.
 #There are some use cases we will look at in later modules where the order of the column
 #Names in the select statement will matter, but for this you can put them in any order
 
